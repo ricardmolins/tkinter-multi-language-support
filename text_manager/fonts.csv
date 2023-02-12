@@ -1,0 +1,7 @@
+Alias,Name,Size,Bold,Italic,Underline
+BOTTOM_BUTTONS,Calibri,14,0,0,0
+TEXT_BIG,Arial,25,0,0,0
+TEXT_SMALL,Arial,12,0,0,0
+TEST_UNDERLINE,Arial,12,0,0,1
+TEST_BOLD,Arial,12,1,0,0
+TEST_BOLD_ITALIC,Arial,12,1,1,0

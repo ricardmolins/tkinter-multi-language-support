@@ -1,0 +1,6 @@
+Alias,Font,eng,cat
+FIRST_BUTTON_TEXT,TEXT_BIG,First text,Primer text
+SECOND_BUTTON_TEXT,TEXT_SMALL,Second text,Segon text
+THIRD_BUTTON_TEXT,TEST_UNDERLINE,Third text,Tercer text
+CHANGE_TO_ENG,BOTTOM_BUTTONS,Change to english,Canviar a Ingles
+CHANGE_TO_CAT,BOTTOM_BUTTONS,Change to catalan,Canviar a Català
