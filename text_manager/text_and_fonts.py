@@ -23,6 +23,7 @@ logger.addHandler(stream_handler)
 TEXT_INDEX = 0
 FONT_INDEX = 1
 
+import platform
 
 class TextAndFontsManager:
 
@@ -32,14 +33,18 @@ class TextAndFontsManager:
         base_folder = os.path.dirname(__file__)
         texts_csv = os.path.join(base_folder, 'texts.csv')
         fonts_csv = os.path.join(base_folder, 'fonts.csv')
+        print(platform.python_version())
+
 
         # Read Text CSV
         with open(texts_csv, newline='', encoding="ISO-8859-1") as csvfile:
             data_text = list(csv.reader(csvfile))
+            csvfile.close()
 
         # Read Font CSV
         with open(fonts_csv, newline='', encoding="ISO-8859-1") as csvfile:
             data_csv = list(csv.reader(csvfile))
+            csvfile.close()
 
 
         logger.debug(data_text)

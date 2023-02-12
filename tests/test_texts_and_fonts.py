@@ -1,7 +1,7 @@
 import pytest
 import os
 
-from texts.text_and_fonts import *
+from text_manager.text_and_fonts import *
 
 import logging
 
@@ -24,9 +24,9 @@ logger.addHandler(stream_handler)
 
 def test_GetMainMenuText():
     text_manager = TextAndFontsManager()
-    maun_menu_text_eng = text_manager.Get("MAIN_MENU_MAIN")
+    maun_menu_text_eng = text_manager.Get("FIRST_BUTTON_TEXT")
 
-    assert (maun_menu_text_eng[TEXT_INDEX] == "Main")
+    assert (maun_menu_text_eng[TEXT_INDEX] == "First text")
     assert (maun_menu_text_eng[FONT_INDEX][0] == "Arial")
     assert (maun_menu_text_eng[FONT_INDEX][1] == 25)
 

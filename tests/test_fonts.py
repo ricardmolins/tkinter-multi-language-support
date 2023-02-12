@@ -1,5 +1,5 @@
 
-from texts.text_and_fonts import *
+from text_manager.text_and_fonts import *
 
 import logging
 

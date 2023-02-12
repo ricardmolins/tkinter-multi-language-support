@@ -1,7 +1,7 @@
 import pytest
 import os
 
-from texts.text_and_fonts import *
+from text_manager.text_and_fonts import *
 
 import logging
 
@@ -24,14 +24,14 @@ logger.addHandler(stream_handler)
 
 def test_GetMainMenuText():
     text_manager = TextAndFontsManager()
-    maun_menu_text_eng = text_manager.GetText("MAIN_MENU_MAIN")
+    maun_menu_text_eng = text_manager.GetText("FIRST_BUTTON_TEXT")
 
-    assert (maun_menu_text_eng == "Main")
+    assert (maun_menu_text_eng == "First text")
 
-def test_GetMainMenuTextEsp():
+def test_GetMainMenuTextCat():
     text_manager = TextAndFontsManager()
-    text_manager.SetLanguage("esp")
-    maun_menu_text_eng = text_manager.GetText("MAIN_MENU_MAIN")
+    text_manager.SetLanguage("cat")
+    maun_menu_text_eng = text_manager.GetText("FIRST_BUTTON_TEXT")
 
-    assert (maun_menu_text_eng == "Principal")
+    assert (maun_menu_text_eng == "Primer text")
     
