@@ -1,8 +1,48 @@
 # tkinter-text-manager
 
-Tool to add simple support multiple languages in a tkinter GUI
+Tool to adds a text and font manager for any GUI using python. Tkinter examples are shown but can be used with any python GUI
+
+Allows
+ * All texts and fonts are described in a ```texts_and_fonts.ods``` file which can be modified for non programmers. This allows
+   * Manage multiple languages texts without having to modify any code.
+   * Simple interface for a translator to do its work
+ * Assign fonts to a specific text to simplify refactoring/changes in GUI design
+ * All text parameters are centralized in an ```.ods``` file. GUI logic totally separated from text
+
+The module allows definig ```TEXT_ID```s  and ```FONT_ID```s which can later be used within the tkinter objects
+
+## Font ID
+Contains the information that describes a font and an alias 
+|Alias	|Name	|Size|	Bold|	Italic	|Underline|
+|---|---|---|---|---|---|
+|FONT_ALIAS_STRING	|Calibri|	14|	0|	0|	0|
 
 
-python3 -m venv text_manager_venv
-source text_manager_venv/bin/activate
-python -m pytest tests
+## Text ID
+|Alias	|Font	|eng|	cat|
+|---|---|---|---|
+|ALIAS_STRING |	```FONT_ALIAS_STRING```	|First text	|Primer text|
+
+
+# Integration
+
+All the text/font information is placed in ```texts_and_fonts.ods```. This file is saved in two ```.csv``` files.
+
+* ```fonts.csv```: contains fonts IDS and its values
+* ```texts.csv```: contains text IDS and its associated fonts.
+
+Modify the ```texts_and_fonts.ods```, then update the ```.csv``` files
+
+## Example code to add a text to a tkinter object
+
+TODO 
+## Example code to change language and update text
+TODO 
+
+# Notes because I forget things
+
+
+* Create virtual enviroment: python3 -m venv text_manager_venv
+* Activate virtual environment: source text_manager_venv/bin/activate
+* Run test: python -m pytest tests
+* Run example: 
