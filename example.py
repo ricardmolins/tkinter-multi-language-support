@@ -9,8 +9,7 @@ def ChangeToEnglish(*args):
 def ChangeToCatalan(*args):
     text_manager.SetLanguage("cat")
     UpdateTexts()
-
-
+    
 def UpdateTexts():
     label_1.configure(text=text_manager.GetText("FIRST_BUTTON_TEXT"))
     label_2.configure(text=text_manager.GetText("SECOND_BUTTON_TEXT"))
