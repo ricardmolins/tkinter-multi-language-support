@@ -53,7 +53,7 @@ label_2.configure(text=text_manager.GetText("SECOND_BUTTON_TEXT"))
 
 ``` 
 
-# Notes because I forget things
+# Notes
 
 * Create virtual enviroment: python3 -m venv text_manager_venv
 * Activate virtual environment: source text_manager_venv/bin/activate
